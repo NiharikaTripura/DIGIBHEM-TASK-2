@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KING HOTEL REGISTRATION</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <section class="imgslider">
+    <div class="container">
+      <h2>KING HOTEL REGISTRATION FORM </h2>
+      <div style = "text-align: center"></div>
+      <form id="registration-form" method="post" action="">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="enter your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="enter your emailid">
+        </div>
+        <div class="form-group">
+          <label for="checkin">Check-in Date:</label>
+          <input type="date" id="checkin" required>
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-out Date:</label>
+          <input type="date" id="checkout" required>
+        </div>
+        <div class="form-group">
+          <label for="total-days">Total No of Days:</label>
+          <input type="number" id="total-days" required>
+        </div>
+        <div class="form-group">
+          <label for="total-persons">Total No of Persons:</label>
+          <input type="number" id="total-persons" name="total-persons" required>
+        </div>
+        <div class="form-group">
+          <label for="room-type">Room Type:</label>
+          <select id="room-type" name="room-type" aria-placeholder="select room type">
+            <option value: "select">select room-type</option>
+            <option value="deluxe">Deluxe Room (2500/- per day)</option>
+            <option value="suite">Suite Room (4000/- per day)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amenities">Amenities:</label>
+          <input type="checkbox" id="ac" name="amenities" value="ac">
+          <label for="ac">AC (1000/- per day)</label><br>
+          <input type="checkbox" id="locker" name="amenities" value="locker">
+          <label for="locker">Locker (300/- per day)</label>
+        </div>
+        <div class="form-group">
+          <label for="advance-amount">Advance Amount:</label>
+          <input type="number" id="advance-amount" required>
+        </div>
+        <div class="form-group">
+          <label for="balance">Balance:</label>
+          <input type="number" id="balance" readonly>
+        </div>
+        <div class="form-group">
+          <label for="total-room-cost">Total Room Cost:</label>
+          <input type="number" id="total-room-cost" name="total-room-cost" readonly>
+        </div>
+        <div class="form-group">
+          <label for="total-amenities-cost">Total Amenities Cost:</label>
+          <input type="number" id="total-amenities-cost" name="total-amenities-cost" readonly>
+        </div>
+        <div class="form-group">
+          <label for="total-cost">Total Cost:</label>
+          <input type="number" id="total-cost" name="total-cost" readonly>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit">
+       
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="hotel.js"></script>
+</body>
+
+</html>
